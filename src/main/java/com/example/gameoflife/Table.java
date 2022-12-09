@@ -7,7 +7,7 @@ import javafx.scene.shape.Rectangle;
 public class Table {
 
     public static int width = 800;
-    public static int height = width;
+    public static int height = 800;
     public static int rowsAmount = 400;
     public static int columnsAmount = rowsAmount;
 
@@ -23,8 +23,8 @@ public class Table {
         for (int row = 0; row < rowsAmount; row++ ){
             for (int column = 0; column < columnsAmount; column++){
                 Rectangle rectangle = new Rectangle();
-                rectangle.setWidth(width/columnsAmount);
-                rectangle.setHeight(height/rowsAmount);
+                rectangle.setWidth((double)width/columnsAmount+1);
+                rectangle.setHeight((double)height/rowsAmount+1);
                 graphicsContext.fillRect(row*fieldsize,column*fieldsize,fieldsize,fieldsize);
                 rectanglesField[row][column] = new Rectangle();
 
