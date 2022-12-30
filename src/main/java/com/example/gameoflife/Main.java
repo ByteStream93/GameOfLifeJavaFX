@@ -16,6 +16,7 @@ public class Main extends Application {
     public static GraphicsContext graphicsContext;
     @Override
     public void start(Stage primaryStage) {
+        
         Group group = new Group();
         Scene scene = new Scene(group);
         Canvas canvas = new Canvas(Table.width,Table.height);
